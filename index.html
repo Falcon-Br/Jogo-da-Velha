@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <section class="tabuleiro">
+        <h1>Jogo da Velha</h1>
+        
+        <div id="jogador">    
+            <div id="jogador1">Jogador 1</div>
+            <div id="jogador2">Jogador 2</div>
+        </div>
+
+        
+        <div class="tabuleir">
+           
+            <div id ="0" class="quadrado"></div>
+            <div id ="1" class="quadrado"></div>
+            <div id ="2" class="quadrado"></div>
+            <div id ="3" class="quadrado"></div>
+            <div id ="4" class="quadrado"></div>
+            <div id ="5" class="quadrado"></div>
+            <div id ="6" class="quadrado"></div>
+            <div id ="7" class="quadrado"></div>
+            <div id ="8" class="quadrado"></div>
+        </div>
+
+        <div>
+            <button class="controle">Recomeçar</button>
+            <button class="controle" onclick="zerarPlacar()">Zerar Placar</button>
+        </div>
+
+        <div class="avisos">    
+         
+        </div>
+
+        
+        
+    </section>
+
+    <div id="comecoDeJogo">
+            <label>Digite o nome dos jogadores</label>
+            <input type="name" id="nomeJogador1" placeholder="1º jogador(a)">
+            <input type="name" id="nomeJogador2" placeholder="2º jogador(a)">
+            <button id="continuar" onclick ="continuar()">Continuar</button>
+    </div>
+
+    <!-- <div id="fimDeJogo">
+            <p>Jogador 1 Venceu o jogo! </p>
+            <button id="continuar" onclick ="continuar()">Continuar</button>
+    </div> -->
+
+<script src="./jogo.js"></script>
+<script src="./interface.js"></script>
+</body>
+</html>
